@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Studio Code Clone</title>
+  <!-- Connect the CSS file -->
+  <link rel="stylesheet" href="css_1.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h2 class="logo">Visual Studio Code</h2>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </nav>
+    <button id="themeBtn">Dark mode</button>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>The open source AI code editor</h1>
+    <p>Plan, code, and ship faster with an editor that runs everywhere.</p>
+    <a href="#download" class="button">Download VS Code</a>
+
+    <!-- Fake editor window -->
+    <div class="editor">
+      <div class="editor-bar">my-app - Visual Studio Code</div>
+      <div class="editor-tabs">
+        <button class="tab" data-file="server.js">server.js</button>
+        <button class="tab" data-file="css_1.css">style.css</button>
+        <button class="tab" data-file="html.html">index.html</button>
+      </div>
+      <pre id="code"></pre>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features">
+    <h2>Why developers love it</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>IntelliSense</h3>
+        <p>Smart code completions as you type.</p>
+      </div>
+      <div class="card">
+        <h3>Debugging</h3>
+        <p>Run your code and find bugs without leaving the editor.</p>
+      </div>
+      <div class="card">
+        <h3>Built-in Git</h3>
+        <p>Commit and review changes from inside the editor.</p>
+      </div>
+      <div class="card">
+        <h3>Extensions</h3>
+        <p>Add languages and tools with one click.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD SECTION -->
+  <section id="download" class="download">
+    <h2>Download Visual Studio Code</h2>
+    <p>Free and built on open source.</p>
+    <button class="button" data-os="Windows">Windows</button>
+    <button class="button" data-os="macOS">macOS</button>
+    <button class="button" data-os="Linux">Linux</button>
+    <p id="message">Choose your system.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Demo clone made for learning. Not affiliated with Microsoft.</p>
+  </footer>
+
+  <!-- Connect the JavaScript file (at the end of the body) -->
+  <script src="css_1.css"></script>
+</body>
+</html>
